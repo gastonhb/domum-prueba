@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: false}))
 //routes
 app.use(require('./routers/index'))
 app.get("/", (req, res) => {
-    res.json({ message: "Hello from server!" });
+    res.json({ message: "Hello from server!!" });
     }); 
 
 app.listen(3000);
