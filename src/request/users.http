@@ -1,0 +1,26 @@
+@api = http://localhost:3000/users
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Tomas",
+    "email": "algo.algo@gmail.com"
+}
+
+###
+GET {{api}}/2
+
+### Borrar un objeto
+DELETE {{api}}/4
+
+###
+PUT {{api}}/4
+Content-Type: application/json
+
+{
+    "name": "maTIAS",
+    "email": "MATIAS.algo@gmail.com"
+}
